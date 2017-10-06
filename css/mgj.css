@@ -1,0 +1,821 @@
+@charset "utf-8";
+/* 去除所有标签内外默认的边距 */
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-size: 12px;
+}
+/* 蘑菇街首页 */
+.shouye{
+	width: 100%;
+	min-width: 1200px;
+	height: 30px;
+	background: #f2f2f2;
+	font-size: 13px;
+	border-bottom: 1px solid #ddd;
+}
+/* 导航栏 */
+.daohanglan{
+	width: 1200px;
+	height: 30px;
+	margin: 0 auto;
+}
+.nav-main{
+	float: right;
+	width: 500px;
+	height: 30px;
+	font-size: 0;
+}
+.nav-main>a{
+	color: #666;
+	text-decoration: none;
+	line-height: 30px;
+	margin-right: 15px;
+	font-size: 14px;
+	outline: none;
+}
+.nav-main>span>a:hover{
+	color: #f46;
+}
+.nav-main>a:hover{
+	color: #f46;
+}
+.nav-main>span{
+	display: inline-block;
+	font-size: 13px;
+	padding: 0 15px;
+	border-left: 1px solid #ddd;
+	height: 18px;
+	line-height: 18px;
+}
+.nav-main>span>a{
+	color: #666;
+	text-decoration: none;
+}
+.nav-main>span>a>xd{
+	position: relative;
+}
+.nav-main .xd{
+	position: relative;
+}
+.nav-main>span .code-img{
+	position: absolute;
+	top: 35px;
+	left: 30px;
+	border: 1px solid #ddd;
+	padding: 5px;
+	display: none;
+}
+.nav-main>span .code-img img{
+	width:  66px;
+	height: 66px;
+}
+.xd:hover .code-img{
+		display: block;
+}
+.biank1{
+	display: inline-block;
+	width: 13px;
+	height: 15px;
+	background: url('../imgs/navi.png') no-repeat 0 -219px;
+}
+.biank2{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: url('../imgs/navi.png') no-repeat 0 -108px;
+}
+.biank3{
+	display: inline-block;
+	width: 7px;
+	height: 7px;
+	background: url('../imgs/navi.png') no-repeat 0 -160px;
+}
+.biank4{
+	display: inline-block;
+    width: 20px;
+    height: 24px;
+    background: url('../imgs/navi.png') no-repeat 0 -257px;
+    vertical-align: middle;
+}
+
+/* 搜索 */
+.sousuo{
+	width: 1200px;
+	height: 105px;
+	margin: 0 auto;
+}
+.tp1{
+	float: left;
+	margin-top: 25px;
+	margin-right: 170px;
+}
+.shuru{
+	width: 500px;
+	height: 60px;
+	float: left;
+	margin-top: 35px;
+}
+.shuru .inp-box{
+	width: 100%;
+	height: 35px;
+	border: 1px solid #333;
+}
+.shuru .inp-box .ssp{
+	display: inline-block;
+	width: 70px;
+	line-height: 35px;
+	text-align: center;
+	color: #333;
+}
+/* 输入框 */
+.shuru .inp-box input{
+	width: 348px;
+	height: 35px;
+	padding-left: 10px;
+	border: 0;
+	outline: none;
+}
+.shuru .inp-box .btn{
+	float: right;
+	width: 68px;
+	height: 35px;
+	background: #3a3a3a;
+}
+.shuru .inp-box .btn i{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url('../imgs/navi.png') 0 -64px no-repeat;
+	margin: 7px 0px 0px 22px;
+}
+.shuru .item li{
+	list-style: none;
+	float: left;
+	margin-right: 20px;
+	color: #999;
+	margin-top: 5px;
+}
+/* 标题 */
+.biaot{
+	width: 1200px;
+	height: 36px;
+	margin: 0 auto;
+}
+.biaot .biaot-1{
+	float: left;
+	display: inline-block;
+	width: 227px;
+	height: 36px;
+	background: #ff4466;
+	text-align: center;
+	line-height: 36px;
+	border-radius: 7px 7px 0 0;
+}
+.biaot .biaot-1 span{
+	color: #ffffff;
+	font-size: 15px;
+}
+.biaot .biaot-2{
+	height: 36px;
+	float: left;
+	display: inline-block;
+	line-height: 36px;
+}
+.biaot .biaot-2 span{
+	font-weight: bold;
+	font-size: 15px;
+	margin-left: 55px;
+}
+/* 首页大框 */
+.shouye-1{
+	width: 1200px;
+	height: 550px;
+	border-top: 1px solid red;
+	margin: 0 auto 78px;
+}
+/* 菜单 */
+.shouye-1 .shouyez{
+	width: 225px;
+	height: 550px;
+	border: 1px solid #ff0000;
+	float: left;
+	margin-right: 20px;
+/* 	display: inline-block; */
+}
+.shouyez .menu-box{
+	padding: 0 10px;
+}
+.shouyez .menu-box li{
+	display: inline-block;
+	list-style: none;
+	width: 100%;
+	height: 41px;
+	line-height: 41px;
+	border-bottom: 1px dotted #ccc;
+	font-size: 0;
+}
+.shouyez .menu-box li:last-child{
+	border-bottom: none;
+}
+.shouyez .menu-box li b{
+	font-size: 15px;
+	margin-right: 10px;
+}
+.shouyez .menu-box li span{
+	color: #999;
+	padding:0 6px;
+	border-right: 1px solid #eee;
+	font-size: 12px;
+}
+.shouyez .menu-box li span:last-child{
+	border-right: none;
+}
+/* 公共颜色字体 */
+.red-color{
+	color: #f49 !important;
+}
+/* 广告位 */
+.nzcsx{
+	width: 735px;
+	height: 530px;
+	display: inline-block;
+	padding-top: 20px;
+	float: left;
+/* 	display: inline-block; */
+}
+.youbian{
+	width: 216px;
+	height: 530px;
+	border: 1px solid #ddd;
+	display: inline-block;
+	margin-top: 20px;
+}
+.youbian1 img{
+	margin: 22px 20px; 
+}
+.youbian .youbian1:first-child img{
+	margin: 22px 20px 0;
+	border-bottom: 1px dashed #ccc; 
+	padding-bottom: 22px;
+}
+/* 限时快抢 */
+.xskq{
+	width: 1200px;
+	height: 304px;
+	margin: 0 auto 70px;
+	border-top: 1px solid #000;
+}
+.xskq-1{
+	position: relative;
+	width: 228px;
+	height: 295px;
+	float: left;
+	margin-right:20px; 
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-bottom: 5px solid #f46;
+}
+/* 快抢样式 */
+.xskq-1 .kq-box{
+	position: absolute;
+	width: 76px;
+	height: 59px;
+	background: url('../imgs/bg_combo.png') no-repeat 0 -310px;
+	right: 13px;
+    bottom: 13px;	
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    padding-top: 14px;
+
+}
+.shij>img{
+	margin-top: 20px;
+	margin-left: 10px;
+	vertical-align: bottom;
+}
+.shij span:nth-child(even){
+	display: inline-block;
+	background: #f46;
+	color: #fff;
+	width: 25px;
+	height: 24px;
+	text-align: center;
+	line-height: 25px;
+	border-radius: 3px;
+}
+.xskq-1 .shij{
+	width: 228px;
+	height: 50px;
+}
+.xskq-1 .shij span{
+	font-size: 16px;
+}
+.xskq-1 .shij2 img{
+	width: 228px;
+	height: 245px;
+}
+.xskq-2{
+	width: 335px;
+	height: 304px;
+	display: inline-block;
+	float: left;
+}
+.xskq-3{
+	width: 240px;
+	height: 304px;
+	float: left;
+	margin-right: 15px;
+}
+.xskq-4{
+	width: 360px;
+	height: 304px;
+	float: right;
+}
+.chaozhi1{
+	margin-bottom: 4px;
+}
+.chaozhi2{
+	margin-bottom: 4px;
+}
+/* 品牌馆开始 */
+.ppg-wrap{
+	width: 1200px;
+	height: 550px;
+	/* 容器居中 */
+	margin: 0 auto 75px;
+}
+/* 品牌馆标题 */
+.ppg-title{
+	width: 100%;
+	height: 34px;
+	margin-bottom: 15px;
+}
+/* 左边条 */
+.title-l{
+	float: left;
+	width: 490px;
+	height: 12px;
+	margin-top: 11px;
+	font-size: 0;
+}
+.title-r{
+	float: right;
+	width: 490px;
+	height: 12px;
+	margin-top: 11px;
+	font-size: 0;
+}
+.title-l .one,.title-r .one{
+	width: 12px;
+	height: 12px;
+	background: url("../imgs/bg_split.png") no-repeat 0 0;
+	display: inline-block;
+}
+.title-l .two,.title-r .two{
+	width: 466px;
+	height: 12px;
+	background: url("../imgs/bg_split.png") repeat-x 0 -12px;
+	display: inline-block;
+}
+.title-l .three,.title-r .three{
+	width: 12px;
+	height: 12px;
+	background: url("../imgs/bg_split.png") repeat-x 0 -26px;
+	display: inline-block;
+}
+/* 品牌馆标题图片 */
+.ppg-title .ppg{
+	float: left;
+	margin-top: 6px;
+	margin-left: 15px;
+}
+/* 左边图片内容 */
+.ppg-l{
+	float: left;
+	width: 224px;
+	height: 500px;
+	border: 1px solid #ddd;
+	margin-right: 20px;
+}
+.ppg-l .ppg-big{
+	height: 235px;
+	padding: 20px 0 0 20px;
+}
+.ppg-l .ppg-sm{
+	float: left;
+	width: 111px;
+	height: 60px;
+	border-top: 1px solid #ddd;
+}
+.ppg-l .ppg-sm:nth-child(even){
+	border-right: 1px solid #ddd;
+}
+/* 右边图片内容 */
+.ppg-r{
+	float: left;
+	width: 954px;
+	height: 498px;
+}
+.ppg-all{
+	float: right;
+	width: 647px;
+	height: 500px;
+	border: 1px solid #ddd;
+}
+.ppg-all>div{
+	float: left;
+	width: 215px;
+	height: 224px;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	text-align: center;
+	padding-top: 25px;
+}
+.ppg-all>div:nth-child(3n){
+	border-right: 0;
+}
+.ppg-all>div:nth-child(4),.ppg-all>div:nth-child(5),
+.ppg-all>div:nth-child(6){
+	border-bottom: 0;
+}
+.ppg-all>div>img{
+	width: 135px;
+	height: 155px;
+}
+/* 品牌馆结束 */
+
+/* 享瘦开始 */
+.xs{
+	width: 1200px;
+	height: 551px;
+	margin: 0 auto 75px;
+
+}
+.kj{
+	width: 1200px;
+	height: 49px;
+}
+.kj-l{
+	width: 492px;
+	height: 12px;
+	margin-top: 12px;
+	font-size: 0;
+	float: left;
+}
+.kj-r{
+	float: right;
+	width: 492px;
+	height: 12px;
+	margin-top: 12px;
+	font-size: 0;
+}
+.zbkf{
+	width: 12px;
+	height: 12px;
+	background: url('../imgs/bg_split.png') no-repeat 0 0;
+	display: inline-block;
+
+}
+.zbkz{
+	width: 467px;
+	height: 13px;
+	background: url('../imgs/bg_split.png') 0 -11px repeat-x;
+	display: inline-block;
+}
+.zbkr{
+	width: 12px;
+	height: 11px;
+	background: url('../imgs/bg_split.png') no-repeat 0 -24px;
+	display: inline-block;
+}
+.tp{
+	float: left;
+	margin-top: 6px;
+	margin-left: 15px;
+}
+.tpzb{
+	width: 223px;
+	height: 501px;
+	border: 1px solid #ddd;
+	float: left;
+	margin-right: 20px
+}
+.tp-1{
+	height: 225px;
+	padding: 20px 0 0 20px;
+}
+.tp-1 img{
+	width: 203px;
+}
+.xt{
+	width: 111px;
+	height: 62px;
+	float: left;
+	border-top: 1px solid #ddd;
+}
+.zhtp img{
+	width: 150px;
+}
+.xt:nth-child(even){
+	border-right: 1px solid #ddd;
+}
+.yb{
+	float: left;
+	width: 953px;
+	height: 500px;
+
+}
+.zhongjian{
+	float: left;
+	width: 954px;
+	height: 498px;
+}
+.zuihou{
+	float: right;
+	width: 646px;
+	height: 498px;
+	border: 1px solid #ddd
+}
+.zhtp{
+	float: left;
+	width: 214px;
+	height: 224px;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	text-align: center;
+	padding-top: 25px;
+}
+.zuihou>div:nth-child(3n){
+	border-right: 0;
+}
+.zuihou>div:nth-child(4),.zuihou>div:nth-child(5),
+.zuihou>div:nth-child(6){
+	border-bottom: 0;
+}
+/* 享瘦结束 */
+
+/* 红人馆开始 */
+.wrap{
+	width: 1200px;
+	height: 550px;
+	margin: 0 auto 75px;
+}
+.bt{
+	width: 1200px;
+	height: 49px;
+}
+.l{
+	float: left;
+	width: 490px;
+	height: 12px;
+	margin-top: 11px;
+	font-size: 0;
+}
+.r{
+	float: right;
+	width: 490px;
+	height: 12px;
+	margin-top: 11px;
+	font-size: 0;
+}
+.f{
+	width: 12px;
+	height: 12px;
+	background: url("../imgs/bg_split.png") no-repeat 0 0;
+	display: inline-block;
+}
+.c{
+	width: 466px;
+	height: 12px;
+	background: url("../imgs/bg_split.png") repeat-x 0 -12px;
+	display: inline-block;
+}
+.z{
+	width: 12px;
+	height: 12px;
+	background: url("../imgs/bg_split.png") repeat-x 0 -26px;
+	display: inline-block;
+}
+.hrg{
+	float: left;
+	margin-top: 6px;
+	margin-left: 15px;
+}
+/* 左边图片大框架 */
+.zuobianda{
+	width: 225px;
+	height: 500px;
+	float: left;
+	margin-right: 20px;
+	border: 1px solid #ddd;
+}
+
+/* 左边图片框架 */
+.zuobian{
+	width: 225px;
+	height: 396px;
+	float: left;
+
+}
+/* 图片修改 */
+.datup{
+	text-align: center;
+	background-color: #fbfbfb;
+	padding: 20px 25px 0px 25px;
+
+
+}
+/* 左边文字框架 */
+.wenzikj{
+	width: 225px;
+	height: 100px;
+	padding-bottom: : 25px;
+	float: left;
+}
+/* 文字设计 */
+.wenzi .zi{
+	font-size: 6px;
+	padding-left: 20px;
+}
+.wenzi{
+	padding-top: 10px
+}
+/* 中间框架one */
+.sanyue{
+	width: 303px;
+	height: 498px;
+	float: left;
+	margin-right: 20px;
+
+}
+.zj-one{
+	width: 305px;
+	height: 330px;
+}
+.zj-one img{
+	width: 305px;
+	height: 330px;
+}
+.zj-two{
+	width: 305px;
+	height: 170px;
+	float: left;
+}
+/* 图片插入 */
+.tpcharu{
+	width: 130px;
+	height: 130px;
+	float: left;
+	padding-top: 20px;
+}
+/* 文字插入 */
+.wzcharu{
+	width: 170px;
+	height: 160px;
+	float: left;	
+}
+.wzcharu .zao{
+	font-size: 13px;
+	padding: 70px 10px 10px 10px;
+}
+.wzcharu .liu{
+	font-size: 13px;
+	padding: 0px 10px 0px 10px;
+	color: #999999;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.sanyue:last-child{
+	margin-right: 0;
+}
+/* 红人馆结束 */
+/* 结尾 */
+.foot-box{
+	width: 100%;
+	background-color: #fbfbfb;
+}
+.foot-box .foot-bg{
+	background: url('../imgs/foot_bg.png') repeat-x;
+}
+.jiewu{
+	width: 1200px;
+	height: 231px;
+	margin: 0 auto;
+}
+.jiewu1{
+	width: 240px;
+	height: 183px;
+	float: left; 
+	margin-right: 97px;
+	color: #999;
+}
+.jiewu1 img{
+	margin-top: 34px;
+}
+.jiewu2{
+	width: 55px;
+	height: 153px;
+	display: inline-block;
+	padding-top:30px;
+	float: left;
+	margin-right: 115px;
+}
+.jiewu2 li{
+	margin-bottom:6px; 
+	list-style: none;
+	color: #666;
+}
+.jiewu2 li:first-child{
+	font-weight: bold;
+	color: #030303;
+}	
+.jiewu3{
+	width: 65px;
+	height: 153px;
+	display: inline-block;
+	float: left;
+	padding-top:30px;
+	float: left;
+	margin-right: 115px;
+}
+.jiewu3 li{
+	margin-bottom:10px; 
+	list-style: none;
+	color: #666;
+}
+.jiewu3 li:first-child{
+	font-weight: bold;
+	color: #030303;
+}
+.meil{
+	width: 286px;
+	height: 183px;
+	display: inline-block;
+
+}
+.meil p{
+	width: 286px;
+	height: 14px;
+	font-weight: bold;
+	margin-top: 30px;
+
+
+}
+.meil .jingc{
+	width: 65px;
+	height: 36px;
+	background: url('../imgs/split.png') no-repeat -495px -46px;
+	display: inline-block;
+	float: left;
+}
+.meil .meil1{
+	width: 220px;
+	height: 36px;
+	background: url('../imgs/split.png') no-repeat -255px -46px;
+	display: inline-block;
+
+}
+.wanmei li{
+	display: inline-block;
+	list-style: none;
+	margin-right: 25px; 
+	margin-top: 10px;
+}
+/* 结尾结束 */
+/* 顶部 */
+.top{
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	width: 25px;
+	height: 30px;
+	line-height: 30px;
+	background: black;
+	color: #fbfbfb;
+	text-decoration: none;
+}
+/* 蘑菇街轮播图的样式 */
+*{margin:0;padding:0;list-style-type:none;border}
+a,img{border:0;}
+/* flexslider */
+.flexslider{position:relative;width:715px;height:530px;overflow:hidden;zoom:1;}
+.flex-viewport{max-height:2000px;-webkit-transition:all 1s ease;-moz-transition:all 1s ease;transition:all 1s ease;}
+.flexslider .slides{zoom:1;}
+.flex-direction-nav a{width:60px;height:90px;line-height:99em;overflow:hidden;margin:-60px 0 0;display:block;background:url(../imgs/ad_ctr.png) no-repeat;position:absolute;top:50%;z-index:10;cursor:pointer;opacity:0;filter:alpha(opacity=0);-webkit-transition:all .3s ease;}
+.flex-direction-nav .flex-next{background-position:0 -90px;right:0;}
+.flex-direction-nav .flex-prev{left:0;}
+.flexslider:hover .flex-next{opacity:0.8;filter:alpha(opacity=25);}
+.flexslider:hover .flex-prev{opacity:0.8;filter:alpha(opacity=25);}
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover{opacity:1;filter:alpha(opacity=50);}
+.flex-control-nav{width:100%;position:absolute;bottom:10px;text-align:center;}
+.flex-control-nav li{margin:0 5px;display:inline-block;zoom:1;*display:inline;}
+.flex-control-paging li a{display:block;overflow:hidden;text-indent:-99em;height:12px;width:12px;border-radius:50%;background:rgba(0,0,0,0.5);cursor:pointer;}
+.flex-control-paging li a.flex-active{background:#f46;}
+
+
+
